@@ -10,11 +10,10 @@ function checkIfEmpty(){
     
 }
 
-function checkIfSame(event){
-    var password = document.getElementsByName("txtPassword").value;
-    var confirmPassword = document.getElementsByName("txtConfirm").value
+function checkIfSame(){
+    var password = document.getElementsById("txtPassword").value;
+    var confirmPassword = document.getElementsById("txtConfirm").value
     if(password == confirmPassword){
-        event.preventDefault();
         return;
     }else{
         document.getElementById("errConfirm").style.visibility = "visible";
