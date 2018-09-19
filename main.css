@@ -18,6 +18,14 @@ body {
 }
 
 #msgTroll {
-    color: blue;
+    color: rebeccapurple;
+    font-size: 50px;
+    text-align: center;
+}
+
+#btnSubmit {
+    width: 200px;
+    height:100px;
+    font-size: 48px;
 }
 
