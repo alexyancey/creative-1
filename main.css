@@ -11,3 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background-color: beige;
 }
+
+#errFirstName, #errMiddleName, #errLastName, #errAddress, #errCity, #errState, #errEmail, #errPassword, #errConfirm {
+    color: red;
+    visibility: hidden;
+}
