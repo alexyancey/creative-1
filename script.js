@@ -45,13 +45,14 @@ function checkIfEmpty(){
         document.getElementById("errConfirm").style.visibility = "visible";
 }
 
-function checkIfSame(){
+function checkIfSame(event){
     var password = document.getElementsByName("txtPassword").value;
     var confirmPassword = document.getElementsByName("txtConfirm").value
     if(password == confirmPassword){
-        
+        event.preventDefault();
+        return;
     }else{
-        
+        document.getElementById("errConfirm").style.visibility = "visible";
     }
 }
 
