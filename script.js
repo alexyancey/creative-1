@@ -9,9 +9,31 @@ var responses = ["The Password and Confirm Password must match.",
 function reset()
 {
     document.getElementById("txtFirstName").value = "";
-    //document.getElementById("errFirstName").visibility = "hidden";
+    document.getElementById("errFirstName").style.visibility= "hidden";
     
-    //document.getElementsByName("txtMiddleName").value = "";
+    document.getElementById("txtMiddleName").value = "";
+    document.getElementById("errMiddleName").style.visibility= "hidden";
+    
+    document.getElementById("txtLastName").value = "";
+    document.getElementById("errLastName").style.visibility= "hidden";
+    
+    document.getElementById("txtAddress").value = "";
+    document.getElementById("errAddress").style.visibility= "hidden";
+    
+    document.getElementById("txtCity").value = "";
+    document.getElementById("errCity").style.visibility= "hidden";
+    
+    document.getElementById("txtState").value = "";
+    document.getElementById("errState").style.visibility= "hidden";
+    
+    document.getElementById("txtEmail").value = "";
+    document.getElementById("errEmail").style.visibility= "hidden";
+    
+    document.getElementById("txtPassword").value = "";
+    document.getElementById("errPassword").style.visibility= "hidden";
+    
+    document.getElementById("txtConfirm").value = "";
+    document.getElementById("errConfirm").style.visibility= "hidden";
 }
 
 function checkIfEmpty(){
