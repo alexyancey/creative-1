@@ -25,6 +25,8 @@ function checkIfEmpty(){
     var password = document.getElementById("txtPassword").value;
     var confirm = document.getElementById("txtConfirm").value;
     
+    
+    
     if (firstName === "")
         document.getElementById("errFirstName").style.visibility = "visible";
     if (middleName === "")
@@ -36,7 +38,7 @@ function checkIfEmpty(){
     if (city === "")
         document.getElementById("errCity").style.visibility = "visible";
     if (state === "")
-        document.getElementById("errCity").style.visibility = "visible";
+        document.getElementById("errState").style.visibility = "visible";
     if (email === "")
         document.getElementById("errEmail").style.visibility = "visible";
     if (password === "")
@@ -46,9 +48,12 @@ function checkIfEmpty(){
 }
 
 function checkIfSame(){
-    var password = document.getElementsById("txtPassword").value;
-    var confirmPassword = document.getElementsById("txtConfirm").value
-    if(password == confirmPassword){
+    var password = document.getElementById("txtPassword").value;
+    var confirmPassword = document.getElementById("txtConfirm").value;
+    
+    if(password === "" || confirmPassword === "")
+        return;
+    if(password === confirmPassword){
         return;
     }else{
         document.getElementById("errConfirm").style.visibility = "visible";
@@ -57,6 +62,9 @@ function checkIfSame(){
 
 function submit()
 {
+    checkIfEmpty();
+    checkIfSame();
     reset();
+
 }
 
