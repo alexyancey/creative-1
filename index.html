@@ -11,43 +11,52 @@
                 <tr>
                     <td><label for="txtFirstName">First Name</label></td>
                     <td><input type="textarea" name="txtFirstName"/></td>
+                    <td><label id="errFirstName">Please enter a first name</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtMiddleName">Middle Name</label></td>
                     <td><input type="textarea" name="txtMiddleName"/></td>
+                    <td><label id="errMiddleName">Please enter a middle name</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtLastName">Last Name</label></td>
                     <td><input type="textarea" name="txtLastName"/></td>
+                    <td><label id="errLastName">Please enter a last name</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtAddress">Address</label></td>
                     <td><input type="textarea" name="txtAddress"/></td>
+                    <td><label id="errAddress">Please enter an address</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtCity">City</label></td>
                     <td><input type="textarea" name="txtCity"/></td>
+                    <td><label id="errCity">Please enter a valid city</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtState">State</label></td>
                     <td><input type="textarea" name="txtState"/></td>
+                    <td><label id="errState">Please enter a first name</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtEmail">Email</label></td>
                     <td><input type="textarea" name="txtEmail"/></td>
+                    <td><label id="errEmail">Please enter a valid email</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtPassword">Password</label></td>
                     <td><input type="textarea" name="txtPassword"/></td>
+                    <td><label id="errPassword">Please enter a vaild password</label></td>
                 </tr>
                 <tr>
                     <td><label for="txtConfirm">Confirm Password</label></td>
                     <td><input type="textarea" name="txtConfirm"/></td>
+                    <td><label id="errConfirm">Please confirm your password</label></td>
                 </tr>
             </table>
         </div>
         <div>
-            <button id="btnSubmit" onclick="submit()">Submit</button>
+            <button id="btnSubmit" onclick="checkIfSame(event)">Submit</button>
         </div>
     </body>
 </html>
